@@ -1,6 +1,7 @@
 package testgroup.filmography.model;
 
 
+
 import javax.persistence.*;
 
 @Entity
@@ -23,6 +24,7 @@ public class Film {
 
     @Column(name = "watched")
     private boolean watched;
+
 
     public int getId() {
         return id;
@@ -66,6 +68,6 @@ public class Film {
 
     @Override
     public String toString() {
-        return getTitle() + " " + getYear();
+        return id + " " + title + " " + year + " " + genre + " " + watched;
     }
 }
