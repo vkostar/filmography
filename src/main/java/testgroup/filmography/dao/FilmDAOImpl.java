@@ -46,7 +46,7 @@ public class FilmDAOImpl implements FilmDAO {
     @Override
     public Film getById(int id) {
         Session session = sessionFactory.getCurrentSession();
-        return session.get(Film.class, id);
+        return session.get(Film.class, id+0);
     }
 
     @Override
